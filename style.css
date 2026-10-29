@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  padding-top: 80px;
+  background-color: #f9f8f6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  padding-top: 24px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.nav-top {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.navbar .logo {
+  font-family: "Noto Sans";
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.navbar .logo span {
+  color: #2e7d32;
+  font-style: italic;
+}
+
+.navbar .nav-top a {
+  font-size: 1.2rem;
+  color: #2e7d32;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  padding: 1rem 3rem;
+}
+
+.navbar .nav-top a:hover {
+  color: #2c3e50;
+  transition: 0.3s;
+}
+
+/* Hero */
+.hero {
+  padding: 1rem 7%;
+}
