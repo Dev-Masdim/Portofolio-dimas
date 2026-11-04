@@ -71,17 +71,26 @@ body {
 .hero {
   padding: 1rem 7%;
   display: flex;
-  padding-top: 4rem;
+  align-items: center;
 }
 
 .container {
-  padding-top: 5rem;
+  padding-top: 6rem;
+  display: flex;
+  width: 100%;
+  gap: 16rem;
 }
 
 .hero-text h1 {
+  padding-top: 5rem;
   font-size: 2.5rem;
   color: #2c3e50;
   letter-spacing: 1px;
+}
+
+.hero-text {
+  flex: 2;
+  height: 500px;
 }
 
 .hero-text p {
@@ -89,4 +98,114 @@ body {
   font-family: "Noto Sans";
   font-size: 1.3rem;
   color: #6a7178;
+}
+
+.hero-img {
+  flex: 1;
+  height: 500px;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #255827;
+}
+
+/* About */
+.about {
+  padding: 2rem 7%;
+  background-color: #f9f8f6;
+  font-family: "Noto sans";
+}
+
+.about-container {
+  width: 100%;
+}
+
+.about-heading {
+  margin-bottom: 3rem;
+}
+
+.about-heading span {
+  color: #2e7d32;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.about-heading h2 {
+  color: #2c3e50;
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.about-content {
+  display: -webkit-flex;
+  gap: 2rem;
+}
+
+.about-text,
+.about-education {
+  flex: 1;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.about-content h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.about-content p {
+  color: #6a7178;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-skills {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.about-skills h2 {
+  width: 100%;
+  color: #2e7d32;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-skills span {
+  display: flex;
+  padding: 0.8rem 1rem;
+  background-color: #e9f7ec;
+  color: #2e7d32;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
 }
