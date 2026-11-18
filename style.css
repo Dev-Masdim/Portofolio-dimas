@@ -23,9 +23,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 7%;
-  padding-top: 24px;
+  padding-top: 1rem;
   background-color: transparent;
   position: fixed;
+  border-bottom: 0.5px solid #000;
   top: 0;
   left: 0;
   right: 0;
@@ -49,13 +50,13 @@ body {
 }
 
 .navbar .logo span {
-  color: #2e7d32;
+  /* color: #2e7d32; */
   font-style: italic;
 }
 
 .navbar .nav-top a {
   font-size: 1.4rem;
-  color: #2e7d32;
+  color: #2c3e50;
   text-align: center;
   text-decoration: none;
   justify-content: center;
@@ -63,7 +64,7 @@ body {
 }
 
 .navbar .nav-top a:hover {
-  color: #2c3e50;
+  color: #2e7d32;
   transition: 0.3s;
 }
 
@@ -115,7 +116,7 @@ body {
   display: inline-block;
   margin-top: 2.5rem;
   padding: 0.8rem 1.5rem;
-  background-color: #2e7d32;
+  background-color: #6d9773;
   color: white;
   text-decoration: none;
   border-radius: 50px;
@@ -143,13 +144,13 @@ body {
 }
 
 .about-heading span {
-  color: #2e7d32;
+  color: #2c3e50;
   font-weight: 600;
   font-size: 2rem;
 }
 
 .about-heading h2 {
-  color: #2c3e50;
+  color: #6a7178;
   margin-top: 0.8rem;
   font-size: 1.1rem;
 }
@@ -189,19 +190,21 @@ body {
 
 .about-skills h2 {
   width: 100%;
-  color: #2e7d32;
+  color: #2c3e50;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .about-skills span {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
   padding: 0.8rem 1rem;
-  background-color: #e9f7ec;
-  color: #2e7d32;
+  background-color: #6d9773;
+  color: #fff;
   border-radius: 50px;
   font-size: 1rem;
-  font-weight: 500;
   letter-spacing: 0.8px;
 }
 
@@ -209,4 +212,163 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1.3rem;
+}
+
+/* Project */
+
+.project {
+  padding: 2rem 7%;
+  background-color: #f9f8f6;
+  font-family: "Noto sans";
+}
+
+.project-container {
+  width: 100%;
+}
+
+.project-heading {
+  margin-bottom: 5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-heading span {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.project-heading h2 {
+  color: #6a7178;
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.project-content {
+  display: -webkit-flex;
+  gap: 2rem;
+}
+
+.project-card {
+  flex: 1;
+  padding: 2rem;
+  background-color: #bbd8bf;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  color: #2c3e50;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  margin: 0.8rem 0;
+}
+
+.project-card p {
+  color: #6a7178;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Contact */
+
+.contact {
+  padding: 2rem 7%;
+  background-color: #f9f8f6;
+  font-family: "Noto sans";
+}
+
+.contact-container {
+  width: 100%;
+}
+
+.contact-heading {
+  margin-bottom: 5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-heading span {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.contact-heading h2 {
+  color: #6a7178;
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.contact-content {
+  display: -webkit-flex;
+  gap: 2rem;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 4rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.contact-form h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact-form p {
+  color: #6a7178;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #6a7178;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input:hover {
+  border: 1px solid #6d9773;
+  transition: 0.3s;
+}
+
+.contact-form button {
+  padding: 0.8rem 1.5rem;
+  background-color: #6d9773;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #255827;
+}
+
+/* Footer */
+.footer {
+  padding: 1rem 7%;
+  background-color: #6d9773;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
 }
